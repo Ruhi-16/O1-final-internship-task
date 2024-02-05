@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Task Page</h1>
+    </header>
+
+    <div class="container">
+        <p>Visit Count: {{ visit_count }}</p>
+        <div id="dynamic-content">
+            <p>Random Number: {{ random_number }}</p>
+            <button onclick="generateRandomNumber()">Generate Random Number</button>
+        </div>
+    </div>
+
+    <script>
+        function generateRandomNumber() {
+            // You can use AJAX to get a new random number from the server and update the page
+            alert('New random number generated!');
+        }
+    </script>
+</body>
+</html>
+
